@@ -1,12 +1,13 @@
-'''Translator Module'''
+
+"""Translator Module"""
 from deep_translator import MyMemoryTranslator
-def english_to_french(_english_text):
-    '''Translates from English to French'''
-    frenchtext = MyMemoryTranslator (source="en",target="fr").translate('Good Morning')
-    print(frenchtext)
-    return frenchtext
-def french_to_english(_fr_text):
-    '''Translates from French to English'''
-    englishtext=MyMemoryTranslator(source="fr",target='en').translate('Bonjour')
-    print(englishtext)
-    return englishtext
+
+def english_to_french(english_text):
+    """English to French"""
+    french_text = MyMemoryTranslator(source='english', target='french').translate(english_text)
+    return french_text
+
+def french_to_english(french_text):
+    """French to ENglish"""
+    english_text = MyMemoryTranslator(source='french', target='english').translate(french_text)
+    return english_text
